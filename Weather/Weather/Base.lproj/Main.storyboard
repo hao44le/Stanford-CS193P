@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgP-Ia-S5a">
+                                <rect key="frame" x="0.0" y="380" width="600" height="220"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="LIh-2V-hLQ">
+                                <rect key="frame" x="0.0" y="5" width="600" height="367"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="367" id="BIf-Z0-MWh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LIh-2V-hLQ" firstAttribute="leading" secondItem="pgP-Ia-S5a" secondAttribute="leading" id="COY-0C-qkX"/>
+                            <constraint firstItem="pgP-Ia-S5a" firstAttribute="trailing" secondItem="LIh-2V-hLQ" secondAttribute="trailing" id="EWa-Un-Yk7"/>
+                            <constraint firstAttribute="trailing" secondItem="pgP-Ia-S5a" secondAttribute="trailing" id="HyC-5T-M11"/>
+                            <constraint firstItem="LIh-2V-hLQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="5" id="PzJ-10-fRI"/>
+                            <constraint firstItem="pgP-Ia-S5a" firstAttribute="top" secondItem="LIh-2V-hLQ" secondAttribute="bottom" constant="8" symbolic="YES" id="Ye7-I3-QYf"/>
+                            <constraint firstItem="pgP-Ia-S5a" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="jg4-2l-Ari"/>
+                            <constraint firstItem="pgP-Ia-S5a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lRv-D9-5o2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="images" width="251" height="201"/>
+    </resources>
+</document>

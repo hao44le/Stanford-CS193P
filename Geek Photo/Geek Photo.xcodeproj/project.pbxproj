@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C01F002D1B0191A4007F76DB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FFF381B018EBB007F76DB /* SystemConfiguration.framework */; };
+		C01F002E1B0191AB007F76DB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FFF3A1B018EC3007F76DB /* QuartzCore.framework */; };
+		C01F002F1B0191B3007F76DB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FFF3C1B018ECB007F76DB /* CoreTelephony.framework */; };
+		C01F00301B0191BC007F76DB /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FFF3E1B018EDA007F76DB /* libicucore.dylib */; };
+		C01F00311B0191C5007F76DB /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FFF401B018EE3007F76DB /* libz.1.2.5.dylib */; };
+		C01F00321B0191CF007F76DB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FFF421B018EEA007F76DB /* Security.framework */; };
+		C01F00331B0191D6007F76DB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FFF441B018EF8007F76DB /* Social.framework */; };
+		C01F00341B0191DC007F76DB /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FFF461B018EFF007F76DB /* Accounts.framework */; };
+		C01F00351B0191E3007F76DB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FFF481B018F18007F76DB /* MessageUI.framework */; };
+		C01F00361B0191EB007F76DB /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FFF4A1B018F23007F76DB /* libstdc++.dylib */; };
+		C01F00391B019230007F76DB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01F00381B019230007F76DB /* ImageIO.framework */; };
+		C01FFEC61B018057007F76DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01FFEC51B018057007F76DB /* AppDelegate.swift */; };
+		C01FFECB1B018057007F76DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01FFEC91B018057007F76DB /* Main.storyboard */; };
+		C01FFECD1B018057007F76DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01FFECC1B018057007F76DB /* Images.xcassets */; };
+		C01FFED01B018057007F76DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01FFECE1B018057007F76DB /* LaunchScreen.xib */; };
+		C01FFEDC1B018057007F76DB /* Geek_PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01FFEDB1B018057007F76DB /* Geek_PhotoTests.swift */; };
+		C01FFEEA1B0180A2007F76DB /* UIImage+BKAscii.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FFEE91B0180A2007F76DB /* UIImage+BKAscii.m */; };
+		C01FFEEF1B01847C007F76DB /* ASCIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01FFEEE1B01847C007F76DB /* ASCIViewController.swift */; };
+		C01FFEF11B0184BE007F76DB /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01FFEF01B0184BE007F76DB /* CGRect+Extension.swift */; };
+		C0F413211B023FD30068F18C /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F4131D1B023FD30068F18C /* libWeChatSDK.a */; };
+		C0F413221B023FD30068F18C /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = C0F4131E1B023FD30068F18C /* read_me.txt */; };
+		C0F413241B0240470068F18C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F413231B0240470068F18C /* libz.dylib */; };
+		C0F413261B02405E0068F18C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F413251B02405E0068F18C /* libsqlite3.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C01FFED61B018057007F76DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C01FFEB81B018057007F76DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C01FFEBF1B018057007F76DB;
+			remoteInfo = "Geek Photo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AEF3FC9EE18E5C5A1C7CD90 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3D044F2C25D67DEFC4370BE8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D342728E40ADAFE19EBE19A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C01F00381B019230007F76DB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C01FFEC01B018057007F76DB /* Geek Photo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Geek Photo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C01FFEC41B018057007F76DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C01FFEC51B018057007F76DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C01FFECA1B018057007F76DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C01FFECC1B018057007F76DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C01FFECF1B018057007F76DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C01FFED51B018057007F76DB /* Geek PhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Geek PhotoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C01FFEDA1B018057007F76DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C01FFEDB1B018057007F76DB /* Geek_PhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geek_PhotoTests.swift; sourceTree = "<group>"; };
+		C01FFEE61B0180A2007F76DB /* BKAsciiConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKAsciiConverter.h; sourceTree = "<group>"; };
+		C01FFEE81B0180A2007F76DB /* UIImage+BKAscii.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BKAscii.h"; sourceTree = "<group>"; };
+		C01FFEE91B0180A2007F76DB /* UIImage+BKAscii.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BKAscii.m"; sourceTree = "<group>"; };
+		C01FFEED1B018212007F76DB /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		C01FFEEE1B01847C007F76DB /* ASCIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASCIViewController.swift; sourceTree = "<group>"; };
+		C01FFEF01B0184BE007F76DB /* CGRect+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
+		C01FFF381B018EBB007F76DB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C01FFF3A1B018EC3007F76DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C01FFF3C1B018ECB007F76DB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C01FFF3E1B018EDA007F76DB /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		C01FFF401B018EE3007F76DB /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		C01FFF421B018EEA007F76DB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C01FFF441B018EF8007F76DB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		C01FFF461B018EFF007F76DB /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		C01FFF481B018F18007F76DB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C01FFF4A1B018F23007F76DB /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		C01FFF4C1B018F2A007F76DB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		C0F4131D1B023FD30068F18C /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		C0F4131E1B023FD30068F18C /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
+		C0F4131F1B023FD30068F18C /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		C0F413201B023FD30068F18C /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		C0F413231B0240470068F18C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C0F413251B02405E0068F18C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C01FFEBD1B018057007F76DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F413261B02405E0068F18C /* libsqlite3.0.dylib in Frameworks */,
+				C0F413241B0240470068F18C /* libz.dylib in Frameworks */,
+				C01F00391B019230007F76DB /* ImageIO.framework in Frameworks */,
+				C01F00361B0191EB007F76DB /* libstdc++.dylib in Frameworks */,
+				C01F00351B0191E3007F76DB /* MessageUI.framework in Frameworks */,
+				C0F413211B023FD30068F18C /* libWeChatSDK.a in Frameworks */,
+				C01F00341B0191DC007F76DB /* Accounts.framework in Frameworks */,
+				C01F00331B0191D6007F76DB /* Social.framework in Frameworks */,
+				C01F00321B0191CF007F76DB /* Security.framework in Frameworks */,
+				C01F00311B0191C5007F76DB /* libz.1.2.5.dylib in Frameworks */,
+				C01F00301B0191BC007F76DB /* libicucore.dylib in Frameworks */,
+				C01F002F1B0191B3007F76DB /* CoreTelephony.framework in Frameworks */,
+				C01F002E1B0191AB007F76DB /* QuartzCore.framework in Frameworks */,
+				C01F002D1B0191A4007F76DB /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01FFED21B018057007F76DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		023067E61106D3BA3B2681E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D342728E40ADAFE19EBE19A /* Pods.debug.xcconfig */,
+				2AEF3FC9EE18E5C5A1C7CD90 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C01FFEB71B018057007F76DB = {
+			isa = PBXGroup;
+			children = (
+				C01FFEC21B018057007F76DB /* Geek Photo */,
+				C01FFED81B018057007F76DB /* Geek PhotoTests */,
+				C01FFEC11B018057007F76DB /* Products */,
+				023067E61106D3BA3B2681E4 /* Pods */,
+				E6189C553CB63D0026231ED6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C01FFEC11B018057007F76DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C01FFEC01B018057007F76DB /* Geek Photo.app */,
+				C01FFED51B018057007F76DB /* Geek PhotoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C01FFEC21B018057007F76DB /* Geek Photo */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4131C1B023FD30068F18C /* WeChatSDK_1.5 */,
+				C01FFEE51B0180A2007F76DB /* BKAsciiImage */,
+				C01FFEC51B018057007F76DB /* AppDelegate.swift */,
+				C01FFEED1B018212007F76DB /* Header.h */,
+				C01FFEF01B0184BE007F76DB /* CGRect+Extension.swift */,
+				C01FFEEE1B01847C007F76DB /* ASCIViewController.swift */,
+				C01FFEC91B018057007F76DB /* Main.storyboard */,
+				C01FFECC1B018057007F76DB /* Images.xcassets */,
+				C01FFECE1B018057007F76DB /* LaunchScreen.xib */,
+				C01FFEC31B018057007F76DB /* Supporting Files */,
+			);
+			path = "Geek Photo";
+			sourceTree = "<group>";
+		};
+		C01FFEC31B018057007F76DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C01FFEC41B018057007F76DB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C01FFED81B018057007F76DB /* Geek PhotoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C01FFEDB1B018057007F76DB /* Geek_PhotoTests.swift */,
+				C01FFED91B018057007F76DB /* Supporting Files */,
+			);
+			path = "Geek PhotoTests";
+			sourceTree = "<group>";
+		};
+		C01FFED91B018057007F76DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C01FFEDA1B018057007F76DB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C01FFEE51B0180A2007F76DB /* BKAsciiImage */ = {
+			isa = PBXGroup;
+			children = (
+				C01FFEE61B0180A2007F76DB /* BKAsciiConverter.h */,
+				C01FFEE71B0180A2007F76DB /* UIKit */,
+			);
+			path = BKAsciiImage;
+			sourceTree = "<group>";
+		};
+		C01FFEE71B0180A2007F76DB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C01FFEE81B0180A2007F76DB /* UIImage+BKAscii.h */,
+				C01FFEE91B0180A2007F76DB /* UIImage+BKAscii.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C0F4131C1B023FD30068F18C /* WeChatSDK_1.5 */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4131D1B023FD30068F18C /* libWeChatSDK.a */,
+				C0F4131E1B023FD30068F18C /* read_me.txt */,
+				C0F4131F1B023FD30068F18C /* WXApi.h */,
+				C0F413201B023FD30068F18C /* WXApiObject.h */,
+			);
+			path = WeChatSDK_1.5;
+			sourceTree = "<group>";
+		};
+		E6189C553CB63D0026231ED6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0F413251B02405E0068F18C /* libsqlite3.0.dylib */,
+				C0F413231B0240470068F18C /* libz.dylib */,
+				C01F00381B019230007F76DB /* ImageIO.framework */,
+				C01FFF4C1B018F2A007F76DB /* libsqlite3.dylib */,
+				C01FFF4A1B018F23007F76DB /* libstdc++.dylib */,
+				C01FFF481B018F18007F76DB /* MessageUI.framework */,
+				C01FFF461B018EFF007F76DB /* Accounts.framework */,
+				C01FFF441B018EF8007F76DB /* Social.framework */,
+				C01FFF421B018EEA007F76DB /* Security.framework */,
+				C01FFF401B018EE3007F76DB /* libz.1.2.5.dylib */,
+				C01FFF3E1B018EDA007F76DB /* libicucore.dylib */,
+				C01FFF3C1B018ECB007F76DB /* CoreTelephony.framework */,
+				C01FFF3A1B018EC3007F76DB /* QuartzCore.framework */,
+				C01FFF381B018EBB007F76DB /* SystemConfiguration.framework */,
+				3D044F2C25D67DEFC4370BE8 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C01FFEBF1B018057007F76DB /* Geek Photo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FFEDF1B018057007F76DB /* Build configuration list for PBXNativeTarget "Geek Photo" */;
+			buildPhases = (
+				3D7E735136FD5CF18E43F2F6 /* Check Pods Manifest.lock */,
+				C01FFEBC1B018057007F76DB /* Sources */,
+				C01FFEBD1B018057007F76DB /* Frameworks */,
+				C01FFEBE1B018057007F76DB /* Resources */,
+				64BF2D1D2B21B7AB1AA046DF /* Embed Pods Frameworks */,
+				3027D392DB9D6A264C6C027F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Geek Photo";
+			productName = "Geek Photo";
+			productReference = C01FFEC01B018057007F76DB /* Geek Photo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C01FFED41B018057007F76DB /* Geek PhotoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FFEE21B018057007F76DB /* Build configuration list for PBXNativeTarget "Geek PhotoTests" */;
+			buildPhases = (
+				C01FFED11B018057007F76DB /* Sources */,
+				C01FFED21B018057007F76DB /* Frameworks */,
+				C01FFED31B018057007F76DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C01FFED71B018057007F76DB /* PBXTargetDependency */,
+			);
+			name = "Geek PhotoTests";
+			productName = "Geek PhotoTests";
+			productReference = C01FFED51B018057007F76DB /* Geek PhotoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C01FFEB81B018057007F76DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Geilei_Chen;
+				TargetAttributes = {
+					C01FFEBF1B018057007F76DB = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = MA3FRWNL5H;
+					};
+					C01FFED41B018057007F76DB = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = C01FFEBF1B018057007F76DB;
+					};
+				};
+			};
+			buildConfigurationList = C01FFEBB1B018057007F76DB /* Build configuration list for PBXProject "Geek Photo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = C01FFEB71B018057007F76DB;
+			productRefGroup = C01FFEC11B018057007F76DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C01FFEBF1B018057007F76DB /* Geek Photo */,
+				C01FFED41B018057007F76DB /* Geek PhotoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C01FFEBE1B018057007F76DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01FFECB1B018057007F76DB /* Main.storyboard in Resources */,
+				C01FFED01B018057007F76DB /* LaunchScreen.xib in Resources */,
+				C0F413221B023FD30068F18C /* read_me.txt in Resources */,
+				C01FFECD1B018057007F76DB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01FFED31B018057007F76DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3027D392DB9D6A264C6C027F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D7E735136FD5CF18E43F2F6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		64BF2D1D2B21B7AB1AA046DF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C01FFEBC1B018057007F76DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01FFEEA1B0180A2007F76DB /* UIImage+BKAscii.m in Sources */,
+				C01FFEEF1B01847C007F76DB /* ASCIViewController.swift in Sources */,
+				C01FFEC61B018057007F76DB /* AppDelegate.swift in Sources */,
+				C01FFEF11B0184BE007F76DB /* CGRect+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01FFED11B018057007F76DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01FFEDC1B018057007F76DB /* Geek_PhotoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C01FFED71B018057007F76DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C01FFEBF1B018057007F76DB /* Geek Photo */;
+			targetProxy = C01FFED61B018057007F76DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C01FFEC91B018057007F76DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C01FFECA1B018057007F76DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C01FFECE1B018057007F76DB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C01FFECF1B018057007F76DB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FFEDD1B018057007F76DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FFEDE1B018057007F76DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FFEE01B018057007F76DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D342728E40ADAFE19EBE19A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+				);
+				INFOPLIST_FILE = "Geek Photo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					Photo/WeChatSDK_1.5,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "./Geek Photo/Header.h";
+			};
+			name = Debug;
+		};
+		C01FFEE11B018057007F76DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AEF3FC9EE18E5C5A1C7CD90 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+				);
+				INFOPLIST_FILE = "Geek Photo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					"$(PROJECT_DIR)/Geek",
+					Photo/WeChatSDK_1.5,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "./Geek Photo/Header.h";
+			};
+			name = Release;
+		};
+		C01FFEE31B018057007F76DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Geek PhotoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geek Photo.app/Geek Photo";
+			};
+			name = Debug;
+		};
+		C01FFEE41B018057007F76DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Geek PhotoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geek Photo.app/Geek Photo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FFEBB1B018057007F76DB /* Build configuration list for PBXProject "Geek Photo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FFEDD1B018057007F76DB /* Debug */,
+				C01FFEDE1B018057007F76DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FFEDF1B018057007F76DB /* Build configuration list for PBXNativeTarget "Geek Photo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FFEE01B018057007F76DB /* Debug */,
+				C01FFEE11B018057007F76DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FFEE21B018057007F76DB /* Build configuration list for PBXNativeTarget "Geek PhotoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FFEE31B018057007F76DB /* Debug */,
+				C01FFEE41B018057007F76DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C01FFEB81B018057007F76DB /* Project object */;
+}

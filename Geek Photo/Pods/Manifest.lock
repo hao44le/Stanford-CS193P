@@ -1,0 +1,10 @@
+PODS:
+  - BKAsciiImage (0.1.1)
+
+DEPENDENCIES:
+  - BKAsciiImage
+
+SPEC CHECKSUMS:
+  BKAsciiImage: 9d672106097b74c937dd8a5ed24bfa0fb8d549b1
+
+COCOAPODS: 0.36.4

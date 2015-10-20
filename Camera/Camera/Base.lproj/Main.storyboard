@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Camera" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K9c-rs-vHF">
+                                <rect key="frame" x="0.0" y="20" width="600" height="523"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="LR4-t8-zpU" appends="YES" id="u0N-K4-0HF"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zuh-z6-Lp0">
+                                <rect key="frame" x="16" y="551" width="75" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="KSl-T9-UG9"/>
+                                    <constraint firstAttribute="width" constant="75" id="byU-kZ-7Xt"/>
+                                </constraints>
+                                <state key="normal" title="Camera">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="useCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uom-EK-SqA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUN-ki-4sr">
+                                <rect key="frame" x="115" y="551" width="109" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="RkJ-TR-2dx"/>
+                                </constraints>
+                                <state key="normal" title="Camera Roll">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="useCameraRool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JMI-BT-bpA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgB-IK-Cnw">
+                                <rect key="frame" x="283" y="557" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickNewImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMK-VR-TGt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K9c-rs-vHF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5te-fF-RBi"/>
+                            <constraint firstItem="Zuh-z6-Lp0" firstAttribute="baseline" secondItem="dUN-ki-4sr" secondAttribute="firstBaseline" id="CZg-ry-SFE"/>
+                            <constraint firstItem="dUN-ki-4sr" firstAttribute="leading" secondItem="Zuh-z6-Lp0" secondAttribute="trailing" constant="24" id="KoB-i2-xgB"/>
+                            <constraint firstItem="dUN-ki-4sr" firstAttribute="baseline" secondItem="Zuh-z6-Lp0" secondAttribute="firstBaseline" id="OXH-1W-S9o"/>
+                            <constraint firstItem="Zuh-z6-Lp0" firstAttribute="top" secondItem="K9c-rs-vHF" secondAttribute="bottom" constant="8" symbolic="YES" id="T8S-4k-qCW"/>
+                            <constraint firstItem="Zuh-z6-Lp0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WKL-aG-YXo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zuh-z6-Lp0" secondAttribute="bottom" constant="8" symbolic="YES" id="X9d-wG-7RG"/>
+                            <constraint firstItem="Zuh-z6-Lp0" firstAttribute="top" secondItem="dUN-ki-4sr" secondAttribute="top" id="Yj8-Ax-7U4"/>
+                            <constraint firstAttribute="trailing" secondItem="K9c-rs-vHF" secondAttribute="trailing" id="tEb-BD-gsp"/>
+                            <constraint firstItem="K9c-rs-vHF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vMr-bC-VVO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="K9c-rs-vHF" id="7wY-8X-BHm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LR4-t8-zpU">
+                    <connections>
+                        <action selector="handleTapGestureRecognizer:" destination="BYZ-38-t0r" id="QkH-rp-vHJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
